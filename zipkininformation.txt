@@ -1,0 +1,15 @@
+To Monitor,trace,view tranction of microservice we can use zipkin, we have download it by online using url https://zipkin.io/pages/quickstart.html ,we have to download java zipkin ,we we click on download it will downodes a jar file,open the command prompt wher zipkin jar file downloaded and run command java -jar zipkin-server-3.4.0-exec.jar  .zipkin compleserly runs on port number 9411 otherwise u can't see views
+
+example 
+C:\Users\Zishnu\Downloads>java -jar zipkin-server-3.4.0-exec.jar
+
+
+ten to see view steps
+
+1)run zipkin
+2)eureka server
+3)patient microservie
+4)doctor microservice
+5)gatway
+
+then send a reuest to doctor microservice through postman ,it will send a result ,then see view in zipkin Ui   http://127.0.0.1:9411/
